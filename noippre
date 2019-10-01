@@ -1,0 +1,89 @@
+<!--泥嚎啊-->
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>蓝天的空间</title>
+	<style>
+	h1.main{color:#000000;}
+	h2{color:#000000;}
+	ul.pc-nac{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	background-color:#f1f1f1;
+	}
+	li.topo{float:left;}
+	li:not(.topo)
+	{
+		line-height: 40px;
+	}
+	li:not(.topo) a{ color:#217882;
+	text-decoration:none;}
+	.topo a{
+		display:block;
+		color:#000;
+		padding:8px 32px;
+		text-align:center;
+		text-decoration:none;
+	}
+	li.topo a:hover:not(.active){
+		background-color:#555;
+	}
+	.active{
+		background-color:#4CAF50;
+	}
+	a:link{text-decoration:none;}
+	a:visited{text-decoration:none;}
+	a:hover{text-decoration:none;}
+	a:active{text-decoration:none;}
+	table,th,td
+	{
+		border:0px solid black;
+	}
+	td
+	{
+		padding:15px;
+	}
+	body
+	{
+		background-color:#b0c4de;
+	}
+	</style>
+</head>
+<body style>
+<h1 class="main">蓝天的空间</h1>
+	<div class="container navigation">
+		<div class="row">
+			<div class="col_nav">
+				<ul class="pc-nac">
+				<li class="topo"><a  href="index.html" >首页</a></li>
+				<li class="topo"><a href="animate.html" >回六次元空间站</a></li>
+				<li class="topo"><a class="active" href="noippre.html" >NOIP信息学竞赛</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<h2>信息学竞赛资料</h2>
+<ul class="books"><h3>
+<li><a href="https://baike.baidu.com/item/%E8%A1%A5%E7%A0%81/6854613?fr=aladdin" target="_blank">补码的相关资料</li>
+<li><a href="https://blog.csdn.net/wanlixingzhe/article/details/7107923" target="_blank">字节、字、bit、byte的关系
+</li>
+<li><a href="https://baike.baidu.com/item/POP3/175122?fr=aladdin" target="_blank">POP3协议
+</li>
+<li><a href="https://baike.baidu.com/item/SMTP/175887?fr=aladdin" target="_blank">SMTP协议
+</li>
+<li><a href="https://baike.baidu.com/item/imap/350154?fr=aladdin" target="_blank">IMAP协议
+</li>
+<li><a href="https://baike.baidu.com/item/%E9%80%86%E5%BA%8F%E5%AF%B9/11035554" target="_blank">逆序对
+</li>
+<li><a href="https://baike.baidu.com/item/%E8%BF%AA%E5%85%8B%E6%96%AF%E7%89%B9%E6%8B%89%E7%AE%97%E6%B3%95/23665989?fromtitle=Dijkstra%E7%AE%97%E6%B3%95&fromid=215612&fr=aladdin" target="_blank">迪克斯特拉算法
+</li>
+<li><a href="https://www.cnblogs.com/llllllpppppp/p/9749930.html" target="_blank">NOIP知识点
+</li>
+<li><a href="https://www.cnblogs.com/hzf-sbit/p/4056874.html" target="_blank">莫队算法
+</li>
+</h3>
+</ul>
+</body>
+</html>	
