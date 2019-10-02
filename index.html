@@ -66,6 +66,7 @@
   </script>
 	<meta charset="UTF-8">
 	<title>蓝天的空间</title>
+	<link rel="icon" type="image/x-icon" href="aoi.ico"></link>
 	<style>
 	h1.main{color:#000000;}
 	h2{color:#000000;}
@@ -116,6 +117,11 @@
 		background-image:url();
 	}
 	.container{position:relative;}
+
+.columnmiddle {
+	 
+}
+
 	img.ad{
 	width:100%;
 	height:auto;
@@ -129,21 +135,24 @@
     font-size: 38px;
 	margin-top:-19px;
 }
+
 .center {
     position: relative;
     left: 0;
-    top: -21px;
-    width: 440px;
+    top: -35px;
+    width: 880px;
     text-align: left;
 	filter:alpha(opacity=85);
 	opacity:0.85;
 }
-	img.swap{width:440px; height:220px;clear:both;}
-	ul.swap{list-style-type:none;
-	padding:0;
-	margin:0;
-	overflow:hidden;}
 
+	img.swap{width:440px; height:220px;clear:both;}
+
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 video {
@@ -162,26 +171,30 @@ video {
 			<div class="col_nav">
 				<ul class="pc-nac">
 				<li><a class="active" href="index.html">首页</a></li>
-				<li><a href="animate.html" >回六次元空间站</a></li>
+				<li><a href="animate.html" >次元空间站</a></li>
 				<li><a href="javascript:dothing();void(0)">NOIP信息学竞赛</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 <h2>欢迎来到我的网页~</h2>
-<div class="container">
-<ul id="xxn" style="width=500% clear:both;">
-	<img class="dif" id="xx1" name ="xx" class="swap" style="width:440px;height:220px;" src="images/pic1.png"  >
-	<div class="center" id="xxp" style="background-color:#808080"><p style="opacity:1;">庆祝该网站成立！</p></div>	
-</ul>
-<br></br>
-<br></br>
-<ul>
-<p>动漫社视频</p>
-<video width="400" controls>
-<source src="animov.mp4" type="video/mp4">
-</video>
-</ul>
+<div class="contaainer">
+	<div class="columnside"  >
+		
+			<div style="float:left">
+				<p id="xxn">
+				<img class="dif" id="xxl" name ="xx" class="swap" style="width:880px;height:440px;vertical-align:text-top;" src="images/pic1.png">
+				<p class="center" id="xxp" style="background-color:#808080"></p>
+				</p>
+				</div>
+	</div>
+	<div class="columnmiddle">
+		<ul style="text-indent:50px;">
+		<h2 >大事件</h2>
+		<li>某中学国庆竟只放五天假Σ(っ °Д °;)っ</li>
+		</ul>
+	</div>
 </div>
+
 </body>
 </html>	
