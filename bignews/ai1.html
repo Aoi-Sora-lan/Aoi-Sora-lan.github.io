@@ -5,7 +5,7 @@
 	function dothing(){
 		var nn=prompt("请输入密码","");
 		if (nn==123){
-			window.location.href="noippre.html";
+			window.location.href="../noippre.html";
 		}
 	}
 	</script>
@@ -15,23 +15,18 @@
 	var bb=100;
     images = new Array;
 	texts = new Array;
-	href = new Array
 	images[1] = new Image();
-	texts[1] = "天气之子将于11月1日上映"
-	images[1].src = "images/pic2.png";
-	href[1] = "bignews/ai1.html";
-	images[2] = new Image();
 	texts[2] = "庆祝该网站成立"
-	images[2].src = "images/pic1.png";
-	href[2] = "#";
-	images[3] = new Image();
+	images[1].src = "images/pic2.png";
+	images[2] = new Image();
 	texts[3] = "超电磁炮永存"
-	images[3].src = "images/pic3.jpg";
-	href[3] = "#";
-	images[4] = new Image();
+	images[2].src = "images/pic1.png";
+	images[3] = new Image();
 	texts[4] = "喜迎祖国七十周年"
+	images[3].src = "images/pic3.jpg";
+	images[4] = new Image();
+	texts[1] = "天气之子将于11月1日上映"
 	images[4].src = "images/pic4.png";
-	href[4] = "#";
 	function swapPic(){
 		briPic();
 		if(n<=3){
@@ -39,8 +34,7 @@
 		}else{
 		n=1;}
         document.xx.src = images[n].src;
-		document.getElementById("yy").href = href[n];
-		document.getElementById("xxp").innerHTML=texts[n];
+		 document.getElementById("xxp").innerHTML=texts[n];
 		setTimeout('debriPic()',4000);
 	}
 	function briPic(){
@@ -112,7 +106,7 @@
 	body
 	{
 		background-color:#b0c4de;
-		margin: 0;
+		margin:0;
 	}
 	.header{
 		background-color:#f1f1f1;
@@ -160,7 +154,17 @@
   display: table;
   clear: both;
 }
-
+.containers{
+margin-left:10%;
+padding-left: 5%;
+		padding-right: 5%;
+		width:80%;
+		height:200%;
+		background-color:#F0F0F0;
+		  border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+	box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+		}
 video {
     width: 100%;
     height: auto;
@@ -176,30 +180,19 @@ video {
 		<div class="row">
 			<div class="col_nav">
 				<ul class="pc-nac">
-				<li><a class="active" href="index.html">首页</a></li>
-				<li><a href="animate.html" >次元空间站</a></li>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="../animate.html" >次元空间站</a></li>
 				<li><a href="javascript:dothing();void(0)">NOIP信息学竞赛</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
-<h2>欢迎来到我的网页~</h2>
-<div class="contaainer">
-	<div class="columnside"  >
-		
-			<div style="float:left">
-				<p id="xxn">
-				<a id="yy" href="animate.html"><img class="dif" id="xxl" name ="xx" class="swap" style="width:440px;height:220px;vertical-align:text-top;" src="images/pic1.png"></a>
-				<p class="center" id="xxp" style="background-color:#808080"></p>
-				</p>
-				</div>
-	</div>
-	<div class="columnmiddle">
-		<ul style="text-indent:50px;">
-		<h2 >大事件</h2>
-		<p><a href="bignews/ai1.html">天气之子将于11月1日上映</a></p>
-		<p><a href="bignews/ai2.html">某科学的超电磁炮十周年</p>
-		</ul>
+<div class="containerss">
+	<div class="containers">
+		<h2 >天气之子将于11月1日上映</h2><hr>
+		<div ><img style="width:30%;float:left;" src="https://gss3.bdstatic.com/-Po3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=d1741cf2582c11dfded1b8255b1c05ed/bd3eb13533fa828b15b346f2f21f4134970a5a0b.jpg" >
+		</div>
+		<div class="text"><p style="padding-left:31%;padding-right:11%;text-indent:5%"><!--left-30=right-->《天气之子》是日本动画家新海诚编剧并执导，由醍醐虎汰朗、森七菜担任主要配音的一部日本原创动画电影，于2019年7月19日在日本上映。这是新海诚继《你的名字》后时隔三年的又一部动画电影，也是他的第七部及进入令和时代后的首部动画电影，更获得代表日本角逐第92届奥斯卡最佳国际影片奖的资格。</p></div>
 	</div>
 </div>
 
