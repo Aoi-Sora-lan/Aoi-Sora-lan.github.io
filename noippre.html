@@ -1,8 +1,77 @@
 <!--泥嚎啊-->
 <html lang="zh">
 <head>
+	<script language="javascript">
+		var nn=prompt("请输入二次密码","");
+		if (nn!=192837465)
+		{
+			window.location.href="index.html";
+	}
+	</script>
+	<script language="javascript" type="text/javascript">
+    var n = 1;
+	var speed=0;
+	var bb=100;
+    images = new Array;
+	texts = new Array;
+	href = new Array
+	images[1] = new Image();
+	texts[1] = "天气之子将于11月1日上映"
+	images[1].src = "images/pic2.png";
+	href[1] = "bignews/ai1.html";
+	images[2] = new Image();
+	texts[2] = "庆祝该网站成立"
+	images[2].src = "images/pic1.png";
+	href[2] = "#";
+	images[3] = new Image();
+	texts[3] = "超电磁炮永存"
+	images[3].src = "images/pic3.jpg";
+	href[3] = "#";
+	images[4] = new Image();
+	texts[4] = "NOIP即将到来！"
+	images[4].src = "images/pic4.png";
+	href[4] = "#";
+	function swapPic(){
+		briPic();
+		if(n<=3){
+		n++;
+		}else{
+		n=1;}
+        document.xx.src = images[n].src;
+		document.getElementById("yy").href = href[n];
+		document.getElementById("xxp").innerHTML=texts[n];
+		setTimeout('debriPic()',4000);
+	}
+	function briPic(){
+	if(bb<=100){
+		bb=bb+1;
+		document.getElementById("xxn").style.cssText="-webkit-filter: brightness("+bb+"%);filter: brightness("+bb+"%);";
+		setTimeout('briPic()',20);
+		}else{
+		bb=100;
+		document.getElementById("xxn").style.cssText="-webkit-filter: brightness("+bb+"%);filter: brightness("+bb+"%);";
+		}
+	}
+	function debriPic(){
+	if(bb>=40){
+		bb=bb-1;
+		document.getElementById("xxn").style.cssText="-webkit-filter: brightness("+bb+"%);filter: brightness("+bb+"%);";
+		setTimeout('debriPic()',20);
+		}else{
+		swapPic();
+		}
+	}
+	function runPic(){
+	if(speed>=-200){
+		speed=speed-5;
+		document.getElementById("xxn").style.cssText="margin-left:"+speed+"px";
+		setTimeout('runPic()',20);
+		}
+	}
+  </script>
 	<meta charset="UTF-8">
 	<title>蓝天的空间</title>
+	<link rel="icon" type="image/x-icon" href="aoi.ico"></link>
 	<style>
 	h1.main{color:#000000;}
 	h2{color:#000000;}
@@ -11,16 +80,10 @@
 	padding:0;
 	margin:0;
 	overflow:hidden;
-	background-color:#f1f1f1;
+	background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 	}
 	li.topo{float:left;}
-	li:not(.topo)
-	{
-		line-height: 40px;
-	}
-	li:not(.topo) a{ color:#217882;
-	text-decoration:none;}
-	.topo a{
+	li.topo a{
 		display:block;
 		color:#000;
 		padding:8px 32px;
@@ -48,11 +111,66 @@
 	body
 	{
 		background-color:#b0c4de;
+		margin: 0;
 	}
+	.header{
+		background-color:#f1f1f1;
+		padding:10px;
+		width:1145px;
+		height:auto;
+		text-align:center;
+		background-image:url();
+	}
+	.container{position:relative;}
+
+.columnmiddle {
+	 
+}
+
+	img.ad{
+	width:100%;
+	height:auto;
+	}
+	h1.main {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+	margin-top:-19px;
+}
+
+.center {
+    position: relative;
+    left: 0;
+    top: -35px;
+    width: 440px;
+    text-align: left;
+	filter:alpha(opacity=85);
+	opacity:0.85;
+}
+
+	img.swap{width:440px; height:220px;clear:both;}
+
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
 	</style>
 </head>
-<body style>
-<h1 class="main">蓝天的空间</h1>
+<body style OnLoad="swapPic()">
+<div class="container">
+	<img class="ad" src="https://img.zcool.cn/community/01bae65d26accaa80120b5abf17e6d.jpg@1280w_1l_2o_100sh.jpg">
+	<h1 class="main" >蓝天的空间</h1>
+</div>
 	<div class="container navigation">
 		<div class="row">
 			<div class="col_nav">
