@@ -58,21 +58,6 @@
 			</div>
 		</div>
 	</div>
-<div id="comment"></div>
-<link rel="stylesheet" href="gitment.css">
-<script src="gitment.js"></script>
-<script>
-    var gitment = new Gitment({
-        id: 'index.href', // 可选。这个选项不写（不是留空），默认为 location.href
-        owner: 'Aoi-Sora-lan',
-        repo: 'Aoi-sora-lan.github.io',
-        oauth: {
-            client_id: 'c8f68dbeadca9857295d',
-            client_secret: '45aa5573f65de0990027bb8acb8c13adfa83d7d9',
-        },
-     });
-    gitment.render('comment'); //container为你要显示评论的id
-</script>
  <table>
 	<tr>
 		<td>
@@ -85,8 +70,9 @@
 		</td>
 	</tr>
 </table>
+
 <!--PC和WAP自适应版-->
-<div id="SOHUCS" sid="1123" ></div> 
+<div id="SOHUCS" sid="请将此处替换为配置SourceID的语句" ></div> 
 <script type="text/javascript"> 
 (function(){ 
 var appid = 'cyuFhsI5u'; 
@@ -94,5 +80,6 @@ var conf = 'prod_878f597c8a78ed0a82d15f9d90943f7c';
 var width = window.innerWidth || document.documentElement.clientWidth; 
 if (width < 960) { 
 window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
 </body>
 </html>	
